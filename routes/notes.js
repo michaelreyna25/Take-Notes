@@ -1,5 +1,6 @@
-const express = require('express');
-const router = express 
+const router = require('express').Router();
+const {readAndAppend, readFromFile} = require('../helpers/fsUtils');
+
 
 router.get('/', (req, res) => {
     console.log(`${req.protocol}added to notes`);
@@ -11,6 +12,8 @@ router.post('/', (req, res) => {
     console.log(`${req.protocol}added to notes`);
     
     const { title, text } = req.body;
+    console.log(req.body);
+
 
     if (title && text) {
         const newNote = { title, text };

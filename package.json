@@ -4,12 +4,26 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
     "inquirer": "^8.2.4"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelreyna25/Take-Notes.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/michaelreyna25/Take-Notes/issues"
+  },
+  "homepage": "https://github.com/michaelreyna25/Take-Notes#readme"
 }
