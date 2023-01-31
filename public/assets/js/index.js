@@ -31,11 +31,6 @@ const getNotes = () =>
     headers: {
       'Content-Type': 'application/json',
     },
-  })
-  .then((response) => response.json())
-  .then((notes) => notes)
-  .catch((err) => {
-    console.error('Error:', err);
   });
 
 const saveNote = (note) =>
@@ -45,13 +40,6 @@ const saveNote = (note) =>
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(note),
-  })
-  .then((response) => response.json())
-  .then((notes) => {
-    alert('Note saved successfully');
-  })
-  .catch((err) => {
-    console.error('Error:', err);
   });
 
 const deleteNote = (id) =>
@@ -60,11 +48,10 @@ const deleteNote = (id) =>
     headers: {
       'Content-Type': 'application/json',
     },
-  })
-  .then((response) => response.json())
+  });
 
 const renderActiveNote = () => {
-  hide(saveNoteBtn);
+  hide(saveNoteBtn); 
 
   if (activeNote.id) {
     noteTitle.setAttribute('readonly', true);
