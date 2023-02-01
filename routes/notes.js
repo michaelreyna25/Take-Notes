@@ -16,7 +16,7 @@ router.post('/', (req, res) => {
 
 
     if (title && text) {
-        const newNote = { title, text, note_id: uuid()};
+        const newNote = { title, text, id: uuid()};
         readAndAppend(newNote, './db/db.json');
         const response = JSON.stringify(newNote);
         res.json(response);

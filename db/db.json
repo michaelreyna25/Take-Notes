@@ -1,23 +1,7 @@
 [
     {
-        "title": "Test Title",
-        "text": "Test text"
-    },
-    {
-        "title": "two Test",
-        "text": "Test two"
-    },
-    {
-        "title": "pie eater",
-        "text": "pie eats with no hand"
-    },
-    {
-        "title": "die hard",
-        "text": "hard die"
-    },
-    {
-        "title": "Test Notes",
-        "text": "Notes Test",
-        "note_id": "e77d"
+        "title": "New Test Note",
+        "text": "Test test",
+        "id": "617e"
     }
 ]
